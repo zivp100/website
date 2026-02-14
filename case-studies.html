@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Studies | Ziv Pollak</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">ZP<span class="dot">.</span></a>
+      <div class="nav-links">
+        <a href="about.html">About</a>
+        <a href="presentations.html">Talks</a>
+        <a href="case-studies.html" class="active">Case Studies</a>
+        <a href="contact.html" class="nav-cta">Book Ziv</a>
+      </div>
+      <button class="mobile-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="hero-bg-pattern"></div>
+    <div class="page-hero-content">
+      <p class="section-label anim-fade-up">Case Studies</p>
+      <h1 class="page-hero-title anim-fade-up delay-1">Real Teams.<br><span class="highlight">Real Results.</span></h1>
+      <p class="page-hero-sub anim-fade-up delay-2">These aren't hypotheticals — they're outcomes from teams that implemented the strategies I teach on stage.</p>
+    </div>
+  </section>
+
+  <!-- Case Studies -->
+  <section class="case-studies-section">
+    <div class="section-inner">
+
+      <!-- Case Study 1 -->
+      <div class="case-card anim-fade-up">
+        <div class="case-header">
+          <span class="case-number">01</span>
+          <h2>Building Better Software Teams</h2>
+        </div>
+        <div class="case-body">
+          <div class="case-column">
+            <h4>The Challenge</h4>
+            <p>A mid-size engineering org struggled with knowledge silos. Senior developers hoarded context, onboarding took months, and team velocity was stagnant despite hiring.</p>
+          </div>
+          <div class="case-column">
+            <h4>The Approach</h4>
+            <p>Deployed AI-powered skill gap analysis to identify hidden bottlenecks. Built automated documentation pipelines that captured institutional knowledge in real-time. Introduced collaborative AI workflows that made expertise shareable.</p>
+          </div>
+          <div class="case-results">
+            <h4>The Results</h4>
+            <div class="results-grid">
+              <div class="result-item">
+                <span class="result-number">35%</span>
+                <span class="result-label">Faster onboarding</span>
+              </div>
+              <div class="result-item">
+                <span class="result-number">25%</span>
+                <span class="result-label">Higher team velocity</span>
+              </div>
+              <div class="result-item">
+                <span class="result-number">3x</span>
+                <span class="result-label">Knowledge sharing frequency</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Case Study 2 -->
+      <div class="case-card anim-fade-up">
+        <div class="case-header">
+          <span class="case-number">02</span>
+          <h2>Hiring in the Age of AI Tools</h2>
+        </div>
+        <div class="case-body">
+          <div class="case-column">
+            <h4>The Challenge</h4>
+            <p>Traditional coding interviews couldn't distinguish between developers who understood AI tools and those who just copied from them. The hiring pipeline was slow, expensive, and producing poor signal.</p>
+          </div>
+          <div class="case-column">
+            <h4>The Approach</h4>
+            <p>Redesigned the entire evaluation process with AI-native assessments. Introduced adaptive challenges where candidates work with AI tools (not against them). Built continuous learning metrics that predict long-term performance.</p>
+          </div>
+          <div class="case-results">
+            <h4>The Results</h4>
+            <div class="results-grid">
+              <div class="result-item">
+                <span class="result-number">40%</span>
+                <span class="result-label">Shorter hiring cycle</span>
+              </div>
+              <div class="result-item">
+                <span class="result-number">2x</span>
+                <span class="result-label">Higher 1-year retention</span>
+              </div>
+              <div class="result-item">
+                <span class="result-number">60%</span>
+                <span class="result-label">Better hiring manager satisfaction</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Case Study 3 -->
+      <div class="case-card anim-fade-up">
+        <div class="case-header">
+          <span class="case-number">03</span>
+          <h2>Faster Dev &times; Product Iteration</h2>
+        </div>
+        <div class="case-body">
+          <div class="case-column">
+            <h4>The Challenge</h4>
+            <p>Product and engineering spoke different languages. Requirements were vague, feedback came too late, and the average feature took weeks of back-and-forth before reaching production.</p>
+          </div>
+          <div class="case-column">
+            <h4>The Approach</h4>
+            <p>Introduced AI-generated acceptance tests that translated product intent into testable specifications. Deployed code clarity tools that made pull requests readable by non-engineers. Created a shared AI workspace for real-time alignment.</p>
+          </div>
+          <div class="case-results">
+            <h4>The Results</h4>
+            <div class="results-grid">
+              <div class="result-item">
+                <span class="result-number">60%</span>
+                <span class="result-label">Shorter feedback cycles</span>
+              </div>
+              <div class="result-item">
+                <span class="result-number">3 days</span>
+                <span class="result-label">Avg. time to deployment</span>
+              </div>
+              <div class="result-item">
+                <span class="result-number">80%</span>
+                <span class="result-label">Fewer requirement misunderstandings</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="cta-inner anim-fade-up">
+      <h2>Want Results Like These for Your Organization?</h2>
+      <p>Book a keynote or workshop and give your team the playbook to get there.</p>
+      <a href="contact.html" class="btn btn-primary btn-large">Book Ziv</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="nav-logo">ZP<span class="dot">.</span></span>
+        <p>AI in Healthcare &amp; Software Development</p>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="presentations.html">Talks</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="mailto:ziv.pollak@gmail.com" title="Email">&#9993;</a>
+        <a href="https://www.linkedin.com/in/ziv-p-10280b/" target="_blank" title="LinkedIn">in</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Ziv Pollak. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

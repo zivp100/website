@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Ziv Pollak | AI Keynote Speaker</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">ZP<span class="dot">.</span></a>
+      <div class="nav-links">
+        <a href="about.html">About</a>
+        <a href="presentations.html">Talks</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="contact.html" class="nav-cta active">Book Ziv</a>
+      </div>
+      <button class="mobile-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero page-hero-compact">
+    <div class="hero-bg-pattern"></div>
+    <div class="page-hero-content">
+      <p class="section-label anim-fade-up">Contact</p>
+      <h1 class="page-hero-title anim-fade-up delay-1">Let's Make Your Event <span class="highlight">Unforgettable</span></h1>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="section-inner contact-grid">
+      
+      <!-- Contact Form -->
+      <div class="contact-form-wrap anim-fade-up">
+        <h2>Send a Message</h2>
+        <p class="form-intro">Tell me about your event and I'll get back to you within 48 hours.</p>
+        <div class="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="jane@company.com" required>
+          </div>
+          <div class="form-group">
+            <label for="org">Organization</label>
+            <input type="text" id="org" name="org" placeholder="Your company or event name">
+          </div>
+          <div class="form-group">
+            <label for="event-type">Event Type</label>
+            <select id="event-type" name="event-type">
+              <option value="">Select one...</option>
+              <option value="conference">Conference Keynote</option>
+              <option value="workshop">Workshop / Training</option>
+              <option value="panel">Panel Discussion</option>
+              <option value="corporate">Corporate Event</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group full-width">
+            <label for="message">Tell Me About Your Event</label>
+            <textarea id="message" name="message" rows="5" placeholder="What's the event? Who's the audience? What dates are you considering?"></textarea>
+          </div>
+          <button type="button" class="btn btn-primary btn-large full-width" onclick="alert('To activate this form, connect it to a form service like Formspree, Netlify Forms, or your preferred backend.')">Send Message</button>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-info anim-fade-up delay-1">
+        <div class="info-card">
+          <h3>Prefer Email?</h3>
+          <p>Reach me directly at:</p>
+          <a href="mailto:ziv.pollak@gmail.com" class="info-link">ziv.pollak@gmail.com</a>
+        </div>
+        <div class="info-card">
+          <h3>Connect on LinkedIn</h3>
+          <p>Let's connect professionally:</p>
+          <a href="https://www.linkedin.com/in/ziv-p-10280b/" target="_blank" class="info-link">linkedin.com/in/ziv-p</a>
+        </div>
+        <div class="info-card">
+          <h3>What to Expect</h3>
+          <p>After you reach out, here's the process:</p>
+          <div class="expect-steps">
+            <div class="expect-step">
+              <span class="step-num">1</span>
+              <span>We discuss your audience and goals</span>
+            </div>
+            <div class="expect-step">
+              <span class="step-num">2</span>
+              <span>I tailor the talk to your specific needs</span>
+            </div>
+            <div class="expect-step">
+              <span class="step-num">3</span>
+              <span>Your team leaves with actionable takeaways</span>
+            </div>
+          </div>
+        </div>
+        <div class="info-card highlight-card">
+          <h3>Available For</h3>
+          <p>Keynotes, workshops, panels, and corporate training across North America.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="nav-logo">ZP<span class="dot">.</span></span>
+        <p>AI in Healthcare &amp; Software Development</p>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="presentations.html">Talks</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="mailto:ziv.pollak@gmail.com" title="Email">&#9993;</a>
+        <a href="https://www.linkedin.com/in/ziv-p-10280b/" target="_blank" title="LinkedIn">in</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Ziv Pollak. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
