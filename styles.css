@@ -112,11 +112,14 @@ h4 { font-size: 1rem; font-weight: 700; text-transform: uppercase; letter-spacin
 }
 
 .nav-logo {
-  font-family: 'Outfit', sans-serif;
-  font-weight: 900;
-  font-size: 1.6rem;
-  color: var(--white) !important;
-  letter-spacing: -0.02em;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.nav-logo .logo-svg {
+  height: 32px;
+  width: auto;
 }
 
 .nav-logo .dot {
@@ -291,6 +294,47 @@ h4 { font-size: 1rem; font-weight: 700; text-transform: uppercase; letter-spacin
   z-index: -1;
 }
 
+/* --- Hero Trust Bar --- */
+.hero-trust {
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.trust-text {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.trust-text strong {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 600;
+}
+
+.trust-logos {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.trust-logo {
+  height: 28px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+  filter: grayscale(100%) brightness(2);
+  opacity: 0.5;
+  transition: opacity var(--transition), filter var(--transition);
+}
+
+.trust-logo:hover {
+  opacity: 0.85;
+  filter: grayscale(0%) brightness(1);
+}
+
 /* --- Buttons --- */
 .btn {
   display: inline-flex;
@@ -329,6 +373,20 @@ h4 { font-size: 1rem; font-weight: 700; text-transform: uppercase; letter-spacin
 .btn-outline:hover {
   border-color: var(--white);
   color: var(--white);
+  transform: translateY(-2px);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 0.9rem;
+  padding: 12px 24px;
+}
+
+.btn-ghost:hover {
+  color: var(--white);
+  border-color: rgba(255, 255, 255, 0.4);
   transform: translateY(-2px);
 }
 
@@ -371,6 +429,16 @@ h4 { font-size: 1rem; font-weight: 700; text-transform: uppercase; letter-spacin
   font-size: 0.9rem;
   color: var(--gray-600);
   font-weight: 500;
+}
+
+.stats-context {
+  text-align: center;
+  font-size: 0.82rem;
+  color: var(--gray-400);
+  font-style: italic;
+  max-width: 1200px;
+  margin: 16px auto 0;
+  padding: 0 24px;
 }
 
 /* --- Section Labels --- */
@@ -436,6 +504,134 @@ h4 { font-size: 1rem; font-weight: 700; text-transform: uppercase; letter-spacin
   display: inline-flex;
   align-items: center;
   gap: 4px;
+}
+
+/* --- Speaking Experience --- */
+.speaking-experience {
+  padding: 100px 24px;
+  background: var(--white);
+}
+
+.section-subtitle {
+  color: var(--gray-600);
+  font-size: 1.1rem;
+  max-width: 620px;
+  line-height: 1.7;
+  margin-bottom: 48px;
+}
+
+/* Logo Marquee */
+.logo-marquee {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  padding: 36px 24px;
+  margin-bottom: 56px;
+  border-top: 1px solid var(--gray-100);
+  border-bottom: 1px solid var(--gray-100);
+  flex-wrap: wrap;
+}
+
+.logo-item {
+  flex-shrink: 0;
+  opacity: 0.7;
+  transition: opacity var(--transition);
+}
+
+.logo-item:hover {
+  opacity: 1;
+}
+
+.company-logo {
+  height: 40px;
+  width: auto;
+  max-width: 180px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter var(--transition);
+}
+
+.logo-item:hover .company-logo {
+  filter: grayscale(0%);
+}
+
+/* Engagement Cards */
+.engagements-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.engagement-card {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 32px;
+  align-items: start;
+  background: var(--off-white);
+  border-radius: var(--radius-lg);
+  padding: 36px 40px;
+  border: 1px solid var(--gray-100);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.engagement-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.engagement-logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 20px 16px;
+  border: 1px solid var(--gray-100);
+  min-height: 80px;
+}
+
+.engagement-logo {
+  height: 36px;
+  width: auto;
+  max-width: 150px;
+  object-fit: contain;
+}
+
+.engagement-venue {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.78rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 6px;
+}
+
+.engagement-info h3 {
+  margin-bottom: 8px;
+  font-size: 1.25rem;
+}
+
+.engagement-info p {
+  color: var(--gray-600);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.engagement-meta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.meta-tag {
+  font-size: 0.82rem;
+  color: var(--gray-600);
+  background: var(--white);
+  padding: 4px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--gray-100);
 }
 
 /* --- Testimonials --- */
@@ -531,6 +727,21 @@ h4 { font-size: 1rem; font-weight: 700; text-transform: uppercase; letter-spacin
   color: rgba(255, 255, 255, 0.7);
   font-size: 1.15rem;
   margin-bottom: 32px;
+}
+
+.cta-download {
+  margin-top: 16px !important;
+  font-size: 0.92rem !important;
+}
+
+.cta-download a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.cta-download a:hover {
+  color: var(--white);
 }
 
 /* --- Page Hero (Inner pages) --- */
@@ -1086,11 +1297,37 @@ button.btn.full-width {
     display: none;
   }
 
+  .hero-trust {
+    text-align: center;
+  }
+
+  .trust-logos {
+    justify-content: center;
+  }
+
   .topics-grid,
   .testimonial-grid {
     grid-template-columns: 1fr;
     max-width: 500px;
     margin: 0 auto;
+  }
+
+  .engagement-card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .engagement-logo-wrap {
+    justify-content: flex-start;
+    max-width: 200px;
+  }
+
+  .logo-marquee {
+    gap: 32px;
+  }
+
+  .company-logo {
+    height: 32px;
   }
 
   .about-grid {

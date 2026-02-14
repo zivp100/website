@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book Ziv Pollak for your next keynote, workshop, or panel discussion. Available across North America. Download the speaker kit.">
   <title>Book Ziv Pollak | AI Keynote Speaker</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +15,7 @@
   <!-- Navigation -->
   <nav class="main-nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">ZP<span class="dot">.</span></a>
+      <a href="index.html" class="nav-logo"><svg class="logo-svg" viewBox="0 0 210 80" xmlns="http://www.w3.org/2000/svg"><rect x="120" y="38" width="50" height="3" rx="1.5" fill="#FF6B2B" opacity="0.3"/><rect x="130" y="44" width="40" height="2.5" rx="1.25" fill="#FF6B2B" opacity="0.2"/><g transform="skewX(-12)"><path d="M30 18 L68 18 L68 26 L46 56 L70 56 L70 64 L28 64 L28 56 L50 26 L30 26 Z" fill="#FFFFFF"/></g><g transform="skewX(-12)"><rect x="82" y="18" width="14" height="46" rx="1" fill="#FFFFFF"/></g><g transform="skewX(-12)"><path d="M110 18 L124 18 L140 54 L156 18 L170 18 L148 64 L132 64 Z" fill="#FFFFFF"/></g><circle cx="184" cy="58" r="5" fill="#FF6B2B"/></svg></a>
       <div class="nav-links">
         <a href="about.html">About</a>
         <a href="presentations.html">Talks</a>
@@ -32,86 +33,104 @@
     <div class="hero-bg-pattern"></div>
     <div class="page-hero-content">
       <p class="section-label anim-fade-up">Contact</p>
-      <h1 class="page-hero-title anim-fade-up delay-1">Let's Make Your Event <span class="highlight">Unforgettable</span></h1>
+      <h1 class="page-hero-title anim-fade-up delay-1">Let&rsquo;s Make Your <span class="highlight">Next Event</span> Unforgettable</h1>
+      <p class="page-hero-sub anim-fade-up delay-2">Tell me about your event and I&rsquo;ll get back to you within 48 hours with a tailored proposal.</p>
     </div>
   </section>
 
   <!-- Contact Section -->
   <section class="contact-section">
-    <div class="section-inner contact-grid">
-      
-      <!-- Contact Form -->
-      <div class="contact-form-wrap anim-fade-up">
-        <h2>Send a Message</h2>
-        <p class="form-intro">Tell me about your event and I'll get back to you within 48 hours.</p>
-        <div class="contact-form">
-          <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+    <div class="section-inner">
+      <div class="contact-grid">
+
+        <!-- Form -->
+        <div class="contact-form-wrap anim-fade-up">
+          <h2>Book Ziv to Speak</h2>
+          <p class="form-intro">Fill out the form below and I&rsquo;ll follow up with availability and a custom proposal for your event.</p>
+          <div class="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@company.com" required>
+            </div>
+            <div class="form-group">
+              <label for="company">Company / Organization</label>
+              <input type="text" id="company" name="company" placeholder="Acme Corp">
+            </div>
+            <div class="form-group">
+              <label for="event-type">Event Type</label>
+              <select id="event-type" name="event-type">
+                <option value="" disabled selected>Select one</option>
+                <option value="conference">Conference Keynote</option>
+                <option value="allhands">Company All-Hands</option>
+                <option value="workshop">Team Workshop</option>
+                <option value="panel">Panel Discussion</option>
+                <option value="offsite">Leadership Offsite</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group full-width">
+              <label for="audience">Expected Audience Size &amp; Role</label>
+              <input type="text" id="audience" name="audience" placeholder="e.g. 200 engineering managers">
+            </div>
+            <div class="form-group full-width">
+              <label for="date">Preferred Date(s)</label>
+              <input type="text" id="date" name="date" placeholder="e.g. March 2026 or flexible">
+            </div>
+            <div class="form-group full-width">
+              <label for="message">Tell Me About Your Event</label>
+              <textarea id="message" name="message" rows="5" placeholder="What are you hoping the audience takes away? Any specific challenges your team is facing?"></textarea>
+            </div>
+            <button type="button" class="btn btn-primary full-width" onclick="handleSubmit()">Send Inquiry</button>
           </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="jane@company.com" required>
+          <p id="form-confirmation" style="display:none; margin-top: 16px; color: var(--accent); font-weight: 600;">Thanks! I&rsquo;ll be in touch within 48 hours.</p>
+        </div>
+
+        <!-- Sidebar Info -->
+        <div class="contact-info anim-fade-up delay-1">
+
+          <div class="info-card">
+            <h3>&#9993; Email Directly</h3>
+            <p>Prefer to skip the form?</p>
+            <a href="mailto:ziv.pollak@gmail.com" class="info-link">ziv.pollak@gmail.com</a>
           </div>
-          <div class="form-group">
-            <label for="org">Organization</label>
-            <input type="text" id="org" name="org" placeholder="Your company or event name">
+
+          <div class="info-card">
+            <h3>&#128279; LinkedIn</h3>
+            <p>Connect or message me directly.</p>
+            <a href="https://www.linkedin.com/in/ziv-p-10280b/" target="_blank" class="info-link">View Profile &rarr;</a>
           </div>
-          <div class="form-group">
-            <label for="event-type">Event Type</label>
-            <select id="event-type" name="event-type">
-              <option value="">Select one...</option>
-              <option value="conference">Conference Keynote</option>
-              <option value="workshop">Workshop / Training</option>
-              <option value="panel">Panel Discussion</option>
-              <option value="corporate">Corporate Event</option>
-              <option value="other">Other</option>
-            </select>
+
+          <div class="info-card">
+            <h3>&#128196; Speaker Kit</h3>
+            <p>Download my one-sheet with bio, topics, and past engagements.</p>
+            <a href="ziv-pollak-speaker-kit.pdf" download class="info-link">Download PDF &rarr;</a>
           </div>
-          <div class="form-group full-width">
-            <label for="message">Tell Me About Your Event</label>
-            <textarea id="message" name="message" rows="5" placeholder="What's the event? Who's the audience? What dates are you considering?"></textarea>
+
+          <div class="info-card highlight-card">
+            <h3>What to Expect</h3>
+            <p>Here&rsquo;s how it works after you reach out:</p>
+            <div class="expect-steps">
+              <div class="expect-step">
+                <span class="step-num">1</span>
+                <span>I&rsquo;ll reply within 48 hours to learn more about your event.</span>
+              </div>
+              <div class="expect-step">
+                <span class="step-num">2</span>
+                <span>We&rsquo;ll hop on a 20-minute call to align on goals and audience.</span>
+              </div>
+              <div class="expect-step">
+                <span class="step-num">3</span>
+                <span>I&rsquo;ll send a tailored proposal with topic options and pricing.</span>
+              </div>
+            </div>
           </div>
-          <button type="button" class="btn btn-primary btn-large full-width" onclick="alert('To activate this form, connect it to a form service like Formspree, Netlify Forms, or your preferred backend.')">Send Message</button>
+
         </div>
       </div>
-
-      <!-- Contact Info -->
-      <div class="contact-info anim-fade-up delay-1">
-        <div class="info-card">
-          <h3>Prefer Email?</h3>
-          <p>Reach me directly at:</p>
-          <a href="mailto:ziv.pollak@gmail.com" class="info-link">ziv.pollak@gmail.com</a>
-        </div>
-        <div class="info-card">
-          <h3>Connect on LinkedIn</h3>
-          <p>Let's connect professionally:</p>
-          <a href="https://www.linkedin.com/in/ziv-p-10280b/" target="_blank" class="info-link">linkedin.com/in/ziv-p</a>
-        </div>
-        <div class="info-card">
-          <h3>What to Expect</h3>
-          <p>After you reach out, here's the process:</p>
-          <div class="expect-steps">
-            <div class="expect-step">
-              <span class="step-num">1</span>
-              <span>We discuss your audience and goals</span>
-            </div>
-            <div class="expect-step">
-              <span class="step-num">2</span>
-              <span>I tailor the talk to your specific needs</span>
-            </div>
-            <div class="expect-step">
-              <span class="step-num">3</span>
-              <span>Your team leaves with actionable takeaways</span>
-            </div>
-          </div>
-        </div>
-        <div class="info-card highlight-card">
-          <h3>Available For</h3>
-          <p>Keynotes, workshops, panels, and corporate training across North America.</p>
-        </div>
-      </div>
-
     </div>
   </section>
 
@@ -119,8 +138,8 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <span class="nav-logo">ZP<span class="dot">.</span></span>
-        <p>AI in Healthcare &amp; Software Development</p>
+        <span class="nav-logo"><svg class="logo-svg" viewBox="0 0 210 80" xmlns="http://www.w3.org/2000/svg"><rect x="120" y="38" width="50" height="3" rx="1.5" fill="#FF6B2B" opacity="0.3"/><rect x="130" y="44" width="40" height="2.5" rx="1.25" fill="#FF6B2B" opacity="0.2"/><g transform="skewX(-12)"><path d="M30 18 L68 18 L68 26 L46 56 L70 56 L70 64 L28 64 L28 56 L50 26 L30 26 Z" fill="#FFFFFF"/></g><g transform="skewX(-12)"><rect x="82" y="18" width="14" height="46" rx="1" fill="#FFFFFF"/></g><g transform="skewX(-12)"><path d="M110 18 L124 18 L140 54 L156 18 L170 18 L148 64 L132 64 Z" fill="#FFFFFF"/></g><circle cx="184" cy="58" r="5" fill="#FF6B2B"/></svg></span>
+        <p>AI Strategy for Engineering &amp; Product Teams</p>
       </div>
       <div class="footer-links">
         <a href="about.html">About</a>
@@ -137,6 +156,30 @@
       <p>&copy; 2026 Ziv Pollak. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    function handleSubmit() {
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      if (!name || !email) {
+        alert('Please fill in at least your name and email.');
+        return;
+      }
+      // In production, wire this to a form service (Formspree, Netlify Forms, etc.)
+      var subject = encodeURIComponent('Speaking Inquiry from ' + name);
+      var body = encodeURIComponent(
+        'Name: ' + name + '\n' +
+        'Email: ' + email + '\n' +
+        'Company: ' + (document.getElementById('company').value || 'N/A') + '\n' +
+        'Event Type: ' + (document.getElementById('event-type').value || 'N/A') + '\n' +
+        'Audience: ' + (document.getElementById('audience').value || 'N/A') + '\n' +
+        'Date: ' + (document.getElementById('date').value || 'N/A') + '\n\n' +
+        'Message:\n' + (document.getElementById('message').value || 'N/A')
+      );
+      window.location.href = 'mailto:ziv.pollak@gmail.com?subject=' + subject + '&body=' + body;
+      document.getElementById('form-confirmation').style.display = 'block';
+    }
+  </script>
 
 </body>
 </html>
