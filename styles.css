@@ -321,14 +321,15 @@ h4 { font-size: 1rem; font-weight: 700; text-transform: uppercase; letter-spacin
 }
 
 .trust-logo {
-  height: 24px;
+  height: auto;
   width: auto;
-  max-width: 120px;
+  max-height: 44px;
+  max-width: 160px;
   object-fit: contain;
   filter: none;
   opacity: 1;
   background: rgba(255, 255, 255, 0.92);
-  padding: 10px 20px;
+  padding: 12px 24px;
   border-radius: 8px;
   transition: background var(--transition);
 }
