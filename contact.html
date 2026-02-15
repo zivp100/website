@@ -46,7 +46,7 @@
         <div class="contact-form-wrap anim-fade-up">
           <h2>Book Ziv to Speak</h2>
           <p class="form-intro">Fill out the form below and I&rsquo;ll follow up with availability and a custom proposal for your event.</p>
-          <div class="contact-form">
+          <form class="contact-form" action="https://formspree.io/f/maqdodqd" method="POST">
             <div class="form-group">
               <label for="name">Your Name</label>
               <input type="text" id="name" name="name" placeholder="Jane Smith" required>
@@ -83,9 +83,8 @@
               <label for="message">Tell Me About Your Event</label>
               <textarea id="message" name="message" rows="5" placeholder="What are you hoping the audience takes away? Any specific challenges your team is facing?"></textarea>
             </div>
-            <button type="button" class="btn btn-primary full-width" onclick="handleSubmit()">Send Inquiry</button>
-          </div>
-          <p id="form-confirmation" style="display:none; margin-top: 16px; color: var(--accent); font-weight: 600;">Thanks! I&rsquo;ll be in touch within 48 hours.</p>
+            <button type="submit" class="btn btn-primary full-width">Send Inquiry</button>
+          </form>
         </div>
 
         <!-- Sidebar Info -->
@@ -130,28 +129,6 @@
     </div>
   </footer>
 
-  <script>
-    function handleSubmit() {
-      var name = document.getElementById('name').value;
-      var email = document.getElementById('email').value;
-      if (!name || !email) {
-        alert('Please fill in at least your name and email.');
-        return;
-      }
-      var subject = encodeURIComponent('Speaking Inquiry from ' + name);
-      var body = encodeURIComponent(
-        'Name: ' + name + '\n' +
-        'Email: ' + email + '\n' +
-        'Company: ' + (document.getElementById('company').value || 'N/A') + '\n' +
-        'Event Type: ' + (document.getElementById('event-type').value || 'N/A') + '\n' +
-        'Audience: ' + (document.getElementById('audience').value || 'N/A') + '\n' +
-        'Date: ' + (document.getElementById('date').value || 'N/A') + '\n\n' +
-        'Message:\n' + (document.getElementById('message').value || 'N/A')
-      );
-      window.location.href = 'mailto:ziv.pollak@gmail.com?subject=' + subject + '&body=' + body;
-      document.getElementById('form-confirmation').style.display = 'block';
-    }
-  </script>
 
 </body>
 </html>
